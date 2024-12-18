@@ -1,0 +1,24 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "首页",
+      "path": "/admin",
+      "icon": "el-icon-s-home"
+    },
+    {
+      "id": 2,
+      "name": "关于",
+      "path": "/admin/about",
+      "icon": "el-icon-location"
+    },
+    {
+      "id": 3,
+      "name": "用户列表",
+      "path": "/admin/user-list",
+      "icon": "el-icon-user"
+    }
+  ]
+}

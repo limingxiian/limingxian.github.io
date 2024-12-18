@@ -1,0 +1,55 @@
+/* assets/global.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh; /* 适应小屏幕 */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    width: 100vw;
+    height: 100vh; /* 适应小屏幕 */
+  }
+}
+
+@media (min-width: 1024px) {
+  html, body {
+    width: 100%; /* 适应大屏幕 */
+    height: 100%;
+  }
+}
+
+/* CSS */
+/* 滚动条整体部分 */
+::-webkit-scrollbar {
+  width: 8px; /* 垂直滚动条的宽度 */
+  height: 8px; /* 水平滚动条的高度 */
+}
+
+/* 滚动条的滑块部分 */
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* 滑块的颜色 */
+  border-radius: 4px; /* 滑块的圆角 */
+}
+
+/* 滚动条的轨道部分 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 轨道的颜色 */
+  border-radius: 4px; /* 轨道的圆角 */
+}
+
+/* 滚动条的上下箭头按钮 */
+::-webkit-scrollbar-button {
+  height: 0; /* 隐藏箭头按钮 */
+  display: none;
+}
+
+/* 滚动条的轨道两端 */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1; /* 轨道末端的颜色 */
+}

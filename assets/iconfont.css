@@ -1,0 +1,28 @@
+/* assets/iconfont.css */
+@font-face {
+  font-family: "iconfont"; /* Project id 4646180 */
+  src: url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.woff2?t=1733046889551') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.woff?t=1733046889551') format('woff'),
+       url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.ttf?t=1733046889551') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuichudenglu:before {
+  content: "\e616";
+}
+
+.icon-shezhi:before {
+  content: "\e606";
+}
+
+.icon-caidan:before {
+  content: "\e64f";
+}
+/* @import url('https://at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.css'); */
