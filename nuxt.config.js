@@ -2,6 +2,7 @@ import Vue from "vue";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  buildDir: 'build', // 默认值是 'dist'
   head: {
     title: 'my-first-nuxt',
     htmlAttrs: {

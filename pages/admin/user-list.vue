@@ -1,5 +1,18 @@
 <template>
   <div class="userList">
+    <div class="user-search">
+      <el-input
+        v-model="searchValue"
+        placeholder="请输入搜索内容"
+        clearable
+        @keyup.enter="handleSearch"
+        @clear="handleSearch"
+      >
+        <template #append>
+          <el-button type="primary" @click="handleSearch">搜索</el-button>
+        </template>
+      </el-input>
+    </div>
     <Container
       containerTitle="用户列表"
       @handleAdd="handleAdd"

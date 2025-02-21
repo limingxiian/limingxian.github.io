@@ -27,8 +27,8 @@ export function tansParams(params) {
       if (typeof value === 'object') {
         for (const key of Object.keys(value)) {
           if (value[key] !== null && value[key] !== "" && typeof (value[key]) !== 'undefined') {
-            let params = propName + '[' + key + ']';
-            var subPart = encodeURIComponent(params) + "=";
+            let params = `${propName}[${key}]`;
+            let subPart = encodeURIComponent(params) + "=";
             result += subPart + encodeURIComponent(value[key]) + "&";
           }
         }
@@ -36,6 +36,23 @@ export function tansParams(params) {
         result += part + encodeURIComponent(value) + "&";
       }
     }
+  }
+  return result
+}
+
+export function decodeParams(params) {
+  let result = {}
+  if (params) {
+    params = params.split('&')
+    params.forEach(item => {
+      let arr = item.split('=');
+      let value = decodeURIComponent(arr[1]);
+      if ((value.indexOf('[') > -1 && value.indexOf(']') > -1) ||
+        (value.indexOf('{') > -1 && value.indexOf('}') > -1)) {
+        value = JSON.parse(value);
+      }
+      result[decodeURIComponent(arr[0])] = value;
+    })
   }
   return result
 }
