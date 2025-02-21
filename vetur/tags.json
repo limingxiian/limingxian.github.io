@@ -1,0 +1,32 @@
+{
+  "AuthButton": {
+    "description": "Auto imported from components/AuthButton.vue"
+  },
+  "Container": {
+    "description": "Auto imported from components/Container.vue"
+  },
+  "FormDialog": {
+    "description": "Auto imported from components/FormDialog.vue"
+  },
+  "Iconfont": {
+    "description": "Auto imported from components/Iconfont.vue"
+  },
+  "MyPagination": {
+    "description": "Auto imported from components/MyPagination.vue"
+  },
+  "MyTable": {
+    "description": "Auto imported from components/MyTable.vue"
+  },
+  "NavMenu": {
+    "description": "Auto imported from components/navMenu.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "LayoutAdmin": {
+    "description": "Auto imported from components/layout/admin.vue"
+  }
+}

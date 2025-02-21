@@ -1,0 +1,37 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "E:\\\\code\\\\my-first-nuxt\\\\pages\\\\admin\\\\index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_789f9716"
+  },
+  {
+    "name": "admin-about",
+    "path": "/admin/about",
+    "component": "E:\\\\code\\\\my-first-nuxt\\\\pages\\\\admin\\\\about.vue",
+    "chunkName": "pages/admin/about",
+    "_name": "_58e7bc51"
+  },
+  {
+    "name": "admin-user-list",
+    "path": "/admin/user-list",
+    "component": "E:\\\\code\\\\my-first-nuxt\\\\pages\\\\admin\\\\user-list.vue",
+    "chunkName": "pages/admin/user-list",
+    "_name": "_8c8c62b8"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "E:\\\\code\\\\my-first-nuxt\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_6c5c811e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\code\\\\my-first-nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_14c067ef"
+  }
+]
