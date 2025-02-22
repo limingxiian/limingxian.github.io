@@ -37,6 +37,18 @@
           {{ item.label }}
           <el-divider direction="vertical" v-if="index < (tableActions.length - 1)"></el-divider>
         </span>
+        <el-divider direction="vertical"></el-divider>
+        <el-popover
+          placement="top"
+          width="160"
+          v-model="scope.row.popoverVisible">
+          <p>确定要删除这条记录吗？</p>
+          <div style="text-align: right; margin: 0">
+            <el-button size="mini" type="text" @click="scope.row.popoverVisible = false">取消</el-button>
+            <el-button type="primary" size="mini" @click="deleteRow(scope.$index, scope.row)">确定</el-button>
+          </div>
+          <el-button slot="reference" type="text"><span style="color: #f56c6c;">删除</span></el-button>
+        </el-popover>
       </template>
     </el-table-column>
   </el-table>
@@ -69,6 +81,16 @@ export default {
     tableProps: {
       type: Object,
       default: () => {}
+    }
+  },
+  data() {
+    return {
+      visible: false
+    }
+  },
+  methods: {
+    deleteRow(index, row) {
+      row.popoverVisible = false;
     }
   }
 }

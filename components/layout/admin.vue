@@ -92,6 +92,9 @@ export default {
       });
       if (code === 200) {
         this.navList = data;
+        if (data?.length > 0) {
+          this.$router.push(data[0].path);
+        }
       }
     },
     onExitClick() {

@@ -1,6 +1,6 @@
 <template>
   <div class="userList">
-    <div class="user-search">
+    <!-- <div class="user-search">
       <el-input
         v-model="searchValue"
         placeholder="请输入搜索内容"
@@ -12,7 +12,7 @@
           <el-button type="primary" @click="handleSearch">搜索</el-button>
         </template>
       </el-input>
-    </div>
+    </div> -->
     <Container
       containerTitle="用户列表"
       @handleAdd="handleAdd"
@@ -279,6 +279,7 @@ export default {
   },
   methods: {
     async getList() {
+      const t = this;
       const res = await request({
         url: '/api/user/list',
         method: 'get',
@@ -325,15 +326,10 @@ export default {
           type: 'edit',
           icon: 'el-icon-edit',
           click: (row) => {
-            console.log(row)
-          }
-        },
-        {
-          label: '删除',
-          type: 'danger',
-          icon: 'el-icon-delete',
-          click: (row) => {
-            console.log(row)
+            t.modalConfig.visible = true;
+            t.modalConfig.formData = {
+              ...row
+            }
           }
         }
       ]
