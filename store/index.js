@@ -82,13 +82,20 @@ export const actions = {
   }
 }
 
-
+// 方式一：直接暴露出actions、state、mutations
 const store = new Vuex.Store({
   actions,
   mutations,
   state,
   getters
 })
+// 方式二：按模块规划
+// const store = new Vuex.Store({
+//   modules: {
+//     user,
+//   },
+//   getters
+// })
 
 export default function (ctx) {
   // 通过上下文(ctx)可以访问到Nuxt.js的上下文对象
