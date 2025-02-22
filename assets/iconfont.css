@@ -1,9 +1,9 @@
 /* assets/iconfont.css */
 @font-face {
   font-family: "iconfont"; /* Project id 4646180 */
-  src: url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.woff2?t=1733046889551') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.woff?t=1733046889551') format('woff'),
-       url('//at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.ttf?t=1733046889551') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_4646180_ak176vp4e4.woff2?t=1740210498105') format('woff2'),
+    url('//at.alicdn.com/t/c/font_4646180_ak176vp4e4.woff?t=1740210498105') format('woff'),
+    url('//at.alicdn.com/t/c/font_4646180_ak176vp4e4.ttf?t=1740210498105') format('truetype');
 }
 
 .iconfont {
@@ -24,5 +24,13 @@
 
 .icon-caidan:before {
   content: "\e64f";
+}
+
+.icon-close:before {
+  content: "\e6b2";
+}
+
+.icon-open:before {
+  content: "\e650";
 }
 /* @import url('https://at.alicdn.com/t/c/font_4646180_bwzenhb4zp6.css'); */

@@ -37,10 +37,11 @@
           {{ item.label }}
           <el-divider direction="vertical" v-if="index < (tableActions.length - 1)"></el-divider>
         </span>
-        <el-divider direction="vertical"></el-divider>
+        <el-divider direction="vertical" v-if="isRowDel"></el-divider>
         <el-popover
           placement="top"
           width="160"
+          v-show="isRowDel"
           v-model="scope.row.popoverVisible">
           <p>确定要删除这条记录吗？</p>
           <div style="text-align: right; margin: 0">
@@ -81,6 +82,10 @@ export default {
     tableProps: {
       type: Object,
       default: () => {}
+    },
+    isRowDel: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -90,6 +95,8 @@ export default {
   },
   methods: {
     deleteRow(index, row) {
+      console.log('row', row)
+      this.$emit('deleteRow', row);
       row.popoverVisible = false;
     }
   }
